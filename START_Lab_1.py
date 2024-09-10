@@ -4,7 +4,7 @@ def lab1Question1(input_gb):
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
-    num_bytes = input_gb*1073741824
+    num_bytes = input_gb*1073741824 # 1 gigabytes is equivalent to 1073741824 bytes
 
     return num_bytes
 
@@ -12,6 +12,16 @@ def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
     is_odd = None
+    string_count = 0
+
+    if name == str:
+        string_count = len(name) % 2
+        if string_count == 1:
+            is_odd = True
+        else:
+            is_odd = False
+    else:
+        is_odd = None
 
     return is_odd
 
