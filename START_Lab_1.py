@@ -75,12 +75,6 @@ if expected_bytes == calculated_bytes:
 else:
     print("Test failed")
 
-with open(r"D:\NAIT - Data Analytics\Fall 2024\DATA3550 - Data Programming Fundamentals\Lab 1 PBML\lab-1-v2-KVOclares\github\test_file1.txt", "r") as file:
-    list_of_nums = file.readlines()
-    list = [eval(i) for i in list_of_nums]
-    print(file)
-
-
 # You can make similar tests to check if things work for you. 
 # This is kind of annoying, I am aware, but it is a really important skill in programming. 
 # Determining how to check if your code works, and define specific tests for what "working" means is 
