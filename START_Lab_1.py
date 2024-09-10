@@ -4,7 +4,7 @@ def lab1Question1(input_gb):
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
-    
+    num_bytes = input_gb*1073741824
 
     return num_bytes
 
