@@ -40,9 +40,11 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    open_file = open(file_name, "r")
-    list_of_nums = open_file.read()
     
+    with open(file_name, 'r') as file:
+        file_string = file.readlines()
+        list_of_nums = [eval(i) for i in file_string]
+
     return list_of_nums
 
 def lab1Question5(list_numbers):
@@ -72,6 +74,12 @@ if expected_bytes == calculated_bytes:
     print("Test passed")
 else:
     print("Test failed")
+
+with open(r"D:\NAIT - Data Analytics\Fall 2024\DATA3550 - Data Programming Fundamentals\Lab 1 PBML\lab-1-v2-KVOclares\github\test_file1.txt", "r") as file:
+    list_of_nums = file.readlines()
+    list = [eval(i) for i in list_of_nums]
+    print(file)
+
 
 # You can make similar tests to check if things work for you. 
 # This is kind of annoying, I am aware, but it is a really important skill in programming. 
