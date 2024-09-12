@@ -69,7 +69,7 @@ def lab1Question5(list_numbers):
     while single_mode_value < len(value_checker):
         value_checker = mode_grabber(value_checker)
 
-    mode_of_list = value_checker
+    mode_of_list = value_checker[0]
     
     return mode_of_list
 
