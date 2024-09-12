@@ -14,7 +14,7 @@ def lab1Question2(name):
     is_odd = None
     string_count = 0
 
-    if type(name) == str:
+    if (type(name) == str) & (len(name) > 0):
         string_count = len(name) % 2
         if string_count == 1:
             is_odd = True
