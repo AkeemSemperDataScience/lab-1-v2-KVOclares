@@ -51,7 +51,14 @@ def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
     mode_of_list = None
+    unique_numbers = []
+    mode_numbers =[]
 
+    for i in list_numbers:
+        if i not in unique_numbers:
+            unique_numbers.append(i)
+        else:
+            mode_of_list = mode_numbers(1)
     return mode_of_list
 
 def lab1Question6(quarters, dimes, nickels, pennies):
