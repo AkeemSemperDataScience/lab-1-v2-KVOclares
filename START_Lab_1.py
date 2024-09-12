@@ -59,6 +59,7 @@ def lab1Question5(list_numbers):
             unique_numbers.append(i)
         else:
             mode_of_list = mode_numbers.append(i)
+            
     return mode_of_list
 
 def lab1Question6(quarters, dimes, nickels, pennies):
